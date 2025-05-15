@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luv 2 Play Calgary</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white-400 text-gray-800">
+
+ <!-- Navbar -->
+<nav class="bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="#">
+            <img src="./logo2.png" alt="Luv 2 Play Logo" class="h-15 w-16">
+          </a>
+        </div>
+  
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+          <a href="#" class="hover:text-blue-600 transition">Home</a>
+          <a href="#" class="hover:text-yellow-500 transition">Parties</a>
+          <a href="#" class="hover:text-red-500 transition">Membership</a>
+          <a href="#" class="hover:text-blue-600 transition">Menu</a>
+          <a href="#" class="hover:text-yellow-500 transition">Field Trips</a>
+          <a href="#" class="hover:text-red-500 transition">Gift Cards</a>
+          <a href="#" class="hover:text-blue-600 transition">Employment</a>
+          <a href="#" class="hover:text-yellow-500 transition">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="nav-toggle" class="focus:outline-none">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" 
+                 stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                 
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden mt-2 space-y-2 text-gray-700 font-semibold">
+        <a href="#" class="block px-2 py-1 hover:text-blue-600 transition">Home</a>
+        <a href="#" class="block px-2 py-1 hover:text-yellow-500 transition">Parties</a>
+        <a href="#" class="block px-2 py-1 hover:text-red-500 transition">Membership</a>
+        <a href="#" class="block px-2 py-1 hover:text-blue-600 transition">Menu</a>
+        <a href="#" class="block px-2 py-1 hover:text-yellow-500 transition">Field Trips</a>
+        <a href="#" class="block px-2 py-1 hover:text-red-500 transition">Gift Cards</a>
+        <a href="#" class="block px-2 py-1 hover:text-blue-600 transition">Employment</a>
+        <a href="#" class="block px-2 py-1 hover:text-yellow-500 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  
+
+ <!-- Hero Section -->
+<section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-10">
+      
+      <!-- Text Content - 40% width on md+ -->
+      <div class="md:w-2/5 text-left">
+        <h1 class="text-4xl font-extrabold text-blue-600 mb-6 leading-tight">
+          Welcome to Luv 2 Play Calgary
+        </h1>
+        <p class="text-gray-700 mb-6">
+          At Luv 2 Play, we provide a safe and fun environment for children of all ages to explore, play, and create lasting memories. Our facilities are designed with your family's enjoyment in mind.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+          <li>Safe and supervised play areas</li>
+          <li>Exciting indoor playgrounds</li>
+          <li>Birthday party packages</li>
+          <li>Memberships with exclusive benefits</li>
+        </ul>
+        <a href="#admission" 
+           class="inline-block bg-yellow-400 text-white font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
+          Sign Waiver & Admission Info
+        </a>
+      </div>
+  
+      <!-- Video Content - 50% width on md+ -->
+      <div class="md:w-1/2">
+        <video 
+          src="./video.mp4" 
+          autoplay 
+          muted 
+          loop 
+          playsinline
+          class="rounded-lg shadow-lg w-full h-auto object-cover"
+        ></video>
+      </div>
+  
+    </div>
+  </section>
+  
+
+ <!-- Heroicons CDN (for icons) -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- Playing Hours Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-blue-600 text-center mb-10">Playing Hours</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Regular Hours -->
+      <details class="border-2 border-yellow-400 rounded-lg p-6 shadow-lg" open>
+        <summary class="cursor-pointer text-2xl font-semibold text-yellow-600 mb-4 flex items-center gap-2">
+          <i data-feather="calendar"></i> Regular Hours
+        </summary>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-yellow-600"></i> <span><strong>Sunday:</strong> 9:00 AM - 9:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-yellow-600"></i> <span><strong>Monday:</strong> 10:00 AM - 7:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-yellow-600"></i> <span><strong>Tuesday:</strong> 10:00 AM - 7:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-yellow-600"></i> <span><strong>Wednesday:</strong> 10:00 AM - 7:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-yellow-600"></i> <span><strong>Thursday:</strong> 10:00 AM - 7:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-yellow-600"></i> <span><strong>Friday:</strong> 9:00 AM - 9:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-yellow-600"></i> <span><strong>Saturday:</strong> 9:00 AM - 9:00 PM</span></li>
+        </ul>
+      </details>
+
+      <!-- Spring Break Hours -->
+      <details class="border-2 border-red-400 rounded-lg p-6 shadow-lg" open>
+        <summary class="cursor-pointer text-2xl font-semibold text-red-600 mb-4 flex items-center gap-2">
+          <i data-feather="sun"></i> Spring Break Hours
+        </summary>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-red-600"></i> <span><strong>Mon, Mar 24:</strong> 9:00 AM - 9:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-red-600"></i> <span><strong>Tue, Mar 25:</strong> 9:00 AM - 9:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-red-600"></i> <span><strong>Wed, Mar 26:</strong> 9:00 AM - 9:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-red-600"></i> <span><strong>Thu, Mar 27:</strong> 9:00 AM - 9:00 PM</span></li>
+          <li class="flex items-center gap-2"><i data-feather="clock" class="w-4 h-4 text-red-600"></i> <span><strong>Fri, Mar 28:</strong> 9:00 AM - 9:00 PM</span></li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Sign Waiver Button -->
+    <div class="text-center mt-10">
+      <a href="#"
+         class="inline-block bg-green-500 text-white text-lg font-semibold px-6 py-3 rounded-full hover:bg-green-600 transition duration-300">
+        Sign Waiver
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Feather icons init -->
+<script>
+  feather.replace();
+</script>
+
+  <!-- Heroicons CDN (if not already included) -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- Admission Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-blue-600 text-center mb-10">Admission</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Weekday Card -->
+      <div class="border-2 border-yellow-400 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-yellow-600 flex items-center gap-2 mb-4">
+          <i data-feather="calendar"></i> Monday–Thursday
+        </h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Adults/13+ (2 per paid child):</strong> FREE</li>
+          <li><strong>Additional Adults/13+:</strong> $4.95</li>
+          <li><strong>Kids 0–11 Months:</strong> FREE</li>
+          <li><strong>Special Needs:</strong> $6.95</li>
+          <li><strong>1–3 Years:</strong> $10.95</li>
+          <li><strong>4–13 Years:</strong> $13.95</li>
+        </ul>
+      </div>
+
+      <!-- Weekend Card -->
+      <div class="border-2 border-red-400 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-red-600 flex items-center gap-2 mb-4">
+          <i data-feather="calendar"></i> Friday–Sunday & Holidays
+        </h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Adults/13+ (2 per paid child):</strong> FREE</li>
+          <li><strong>Additional Adults/13+:</strong> $4.95</li>
+          <li><strong>Kids 0–11 Months:</strong> FREE</li>
+          <li><strong>Special Needs:</strong> $10.95</li>
+          <li><strong>1–3 Years:</strong> $14.95</li>
+          <li><strong>4–13 Years:</strong> $15.95</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Discount -->
+    <div class="mt-8 bg-blue-50 border-l-4 border-blue-400 p-4 rounded text-blue-800 text-center">
+      <p class="font-semibold">
+        🎖️ Hero Discount: <span class="text-green-600 font-bold">$2 OFF</span><br>
+        VETERANS OF CANADA ARMY, MILITARY, POLICE, FIREFIGHTER, AND EMS<br>
+        <em>(Must present ID)</em>
+      </p>
+    </div>
+
+    <!-- Sign Waiver Button -->
+    <div class="text-center mt-8">
+      <a href="#"
+         class="inline-block bg-green-500 text-white text-lg font-semibold px-6 py-3 rounded-full hover:bg-green-600 transition duration-300">
+        Sign Waiver
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Feather icons init -->
+<script>
+  feather.replace();
+</script>
+
+  <!-- Family Fun Pack & Membership Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-red-500 text-center mb-12">Family Fun Pack</h2>
+  
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Weekday Pack -->
+        <div class="border-2 border-yellow-400 rounded-lg p-6 shadow-lg">
+          <h3 class="text-xl font-semibold text-yellow-600 mb-4">WEEKDAY – $68.95</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Entry for 3 children</li>
+            <li>Large cheese pizza</li>
+            <li>Drinks for 2 adults & 3 children</li>
+            <li>$5 game card for 3 children</li>
+            <li><strong>Additional Child:</strong> $14.95</li>
+          </ul>
+        </div>
+  
+        <!-- Weekend Pack -->
+        <div class="border-2 border-red-400 rounded-lg p-6 shadow-lg">
+          <h3 class="text-xl font-semibold text-red-600 mb-4">WEEKEND – $75.95</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Entry for 3 children</li>
+            <li>Large cheese pizza</li>
+            <li>Drinks for 2 adults & 3 children</li>
+            <li>$5 game card for 3 children</li>
+            <li><strong>Additional Child:</strong> $16.95</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Membership Heading -->
+      <h2 class="text-3xl font-bold text-blue-600 text-center mt-16 mb-10">Membership Options</h2>
+  
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Just Play Membership -->
+        <div class="border-2 border-green-400 rounded-lg p-6 shadow-lg">
+          <h3 class="text-xl font-semibold text-green-600 mb-4">Just Play Membership</h3>
+          <p class="text-lg font-bold text-gray-700 mb-2">Single Child: $38/month</p>
+          <p class="text-md text-gray-600 mb-4">Additional Child: $20/month</p>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Unlimited entry & play (Mon–Thu only)</li>
+            <li>Month to month membership</li>
+            <li>10% discount at Café</li>
+            <li>10% discount on party packages</li>
+            <li>Cancel anytime with 5 business days notice</li>
+          </ul>
+          <a href="#"
+             class="inline-block mt-4 bg-green-500 text-white font-semibold px-5 py-2 rounded-full hover:bg-green-600 transition">
+            Become a Member
+          </a>
+        </div>
+  
+        <!-- Ultimate Play Membership -->
+        <div class="border-2 border-blue-400 rounded-lg p-6 shadow-lg">
+          <h3 class="text-xl font-semibold text-blue-600 mb-4">Ultimate Play Membership</h3>
+          <p class="text-lg font-bold text-gray-700 mb-2">Single Child: $58/month</p>
+          <p class="text-md text-gray-600 mb-4">Additional Child: $20/month</p>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Unlimited entry & play every day</li>
+            <li>$5 game card every month (no rollover)</li>
+            <li>10% discount at Café & party packages</li>
+            <li>20% discount on camps</li>
+            <li>Exclusive member & special events</li>
+            <li>Bring friends — 1st friend $5, others $10</li>
+          </ul>
+          <a href="#"
+             class="inline-block mt-4 bg-blue-500 text-white font-semibold px-5 py-2 rounded-full hover:bg-blue-600 transition">
+            Become a Member
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Features Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-12">Features</h2>
+  
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+        <!-- Indoor Playground -->
+        <div class="bg-blue-50 border-t-4 border-blue-400 rounded-lg shadow-md p-5 text-center">
+          <img src="https://via.placeholder.com/150" alt="Indoor Playground" class="mx-auto mb-4 rounded">
+          <h3 class="text-xl font-semibold text-blue-600 mb-2">Indoor Playground</h3>
+          <p class="text-gray-700 text-sm">3 levels of fun including crawl tubes, slides, tunnels, and more!</p>
+        </div>
+  
+        <!-- Toddler Area -->
+        <div class="bg-yellow-50 border-t-4 border-yellow-400 rounded-lg shadow-md p-5 text-center">
+          <img src="https://via.placeholder.com/150" alt="Toddler Area" class="mx-auto mb-4 rounded">
+          <h3 class="text-xl font-semibold text-yellow-600 mb-2">Toddler Area</h3>
+          <p class="text-gray-700 text-sm">For ages 1–4 with soft play, sensory panels, and interactive toys.</p>
+        </div>
+  
+        <!-- Baby Area -->
+        <div class="bg-pink-50 border-t-4 border-pink-400 rounded-lg shadow-md p-5 text-center">
+          <img src="https://via.placeholder.com/150" alt="Baby Area" class="mx-auto mb-4 rounded">
+          <h3 class="text-xl font-semibold text-pink-600 mb-2">Baby Area</h3>
+          <p class="text-gray-700 text-sm">Crawling area with soft mats and sensory toys for our tiniest guests.</p>
+        </div>
+  
+        <!-- Redemption Games -->
+        <div class="bg-green-50 border-t-4 border-green-400 rounded-lg shadow-md p-5 text-center">
+          <img src="https://via.placeholder.com/150" alt="Redemption Games" class="mx-auto mb-4 rounded">
+          <h3 class="text-xl font-semibold text-green-600 mb-2">Redemption Games</h3>
+          <p class="text-gray-700 text-sm">Fun video games and kiddie rides to earn tickets and win prizes.</p>
+        </div>
+  
+        <!-- Eating Area -->
+        <div class="bg-red-50 border-t-4 border-red-400 rounded-lg shadow-md p-5 text-center">
+          <img src="https://via.placeholder.com/150" alt="Eating Area" class="mx-auto mb-4 rounded">
+          <h3 class="text-xl font-semibold text-red-600 mb-2">Eating Area</h3>
+          <p class="text-gray-700 text-sm">Full café with pizza, burgers, fries, and kid-friendly favorites.</p>
+        </div>
+  
+        <!-- Party Area -->
+        <div class="bg-purple-50 border-t-4 border-purple-400 rounded-lg shadow-md p-5 text-center">
+          <img src="https://via.placeholder.com/150" alt="Party Area" class="mx-auto mb-4 rounded">
+          <h3 class="text-xl font-semibold text-purple-600 mb-2">Party Area</h3>
+          <p class="text-gray-700 text-sm">Private party rooms perfect for birthdays and celebrations.</p>
+        </div>
+  
+        <!-- Relaxing Area
+        <div class="bg-gray-50 border-t-4 border-gray-400 rounded-lg shadow-md p-5 text-center">
+          <img src="https://via.placeholder.com/150" alt="Relaxing Area" class="mx-auto mb-4 rounded">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Relaxing Area</h3>
+          <p class="text-gray-700 text-sm">Comfortable seating zones for adults to unwind while kids play.</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+ <!-- Footer Section -->
+<footer class="bg-white border-t border-gray-200 py-6">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+  
+      <!-- Logo + Copyright -->
+      <div class="flex items-center space-x-4">
+        <img src="./logo2.png" alt="Luv 2 Play Logo" class="h-15 w-16">
+        <div class="text-gray-600 text-sm text-center md:text-left">
+            <span>© 2025 Luv 2 Play.</span>
+          <a href="#" class="text-blue-500 hover:underline">  Privacy Policy</a>
+        </div>
+      </div>
+  
+      <!-- Footer Links -->
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-700 font-medium">
+        <a href="#" class="hover:text-blue-600 transition">Home</a>
+        <a href="#" class="hover:text-blue-600 transition">Parties</a>
+        <a href="#" class="hover:text-blue-600 transition">Membership</a>
+        <a href="#" class="hover:text-blue-600 transition">Menu</a>
+        <a href="#" class="hover:text-blue-600 transition">Field Trips</a>
+        <a href="#" class="hover:text-blue-600 transition">Gift Cards</a>
+        <a href="#" class="hover:text-blue-600 transition">Employment</a>
+        <a href="#" class="hover:text-blue-600 transition">Contact Us</a>
+      </div>
+  
+    </div>
+  </footer>
+  
+
+</body>
+</html>
